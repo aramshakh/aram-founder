@@ -43,6 +43,7 @@
     }
 
     img { display: block; max-width: 100%; }
+    figure { margin: 0; }
     a { color: inherit; }
     p, h1, h2, h3 { margin: 0; }
 
@@ -598,30 +599,70 @@
     @media (max-width: 720px) {
       .page {
         width: min(calc(100% - 24px), var(--max));
-        padding-top: 16px;
+        padding-top: 12px;
       }
 
       .topbar {
         align-items: flex-start;
         flex-direction: column;
-        padding: 12px 14px;
+        padding: 12px 12px 10px;
+        gap: 10px;
+      }
+
+      .brand {
+        font-size: 12px;
       }
 
       .topbar nav {
-        width: 100%;
+        width: calc(100% + 2px);
+        margin: 0 -1px;
+        display: flex;
+        flex-wrap: nowrap;
         gap: 8px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding: 2px 1px 4px;
       }
 
+      .topbar nav::-webkit-scrollbar { display: none; }
+
       .nav-link,
-      .asset-link { width: 100%; justify-content: center; }
+      .asset-link {
+        width: auto;
+        justify-content: center;
+        flex: 0 0 auto;
+        white-space: nowrap;
+      }
+
+      .nav-link {
+        min-height: 40px;
+        padding: 0 13px;
+        background: rgba(255, 253, 248, 0.92);
+        border-color: rgba(216, 204, 188, 0.92);
+      }
+
+      .hero-shell,
+      .editorial {
+        gap: var(--space-4);
+      }
 
       .hero-rail,
       .side-notes { grid-template-columns: 1fr; }
 
-      h1 { font-size: clamp(3rem, 14vw, 4.8rem); }
+      .hero-caption {
+        gap: var(--space-3);
+        padding-bottom: var(--space-4);
+      }
+
+      .hero-headline {
+        gap: 14px;
+      }
+
+      h1 { font-size: clamp(2.7rem, 13vw, 4.2rem); }
 
       .poster {
-        min-height: 430px;
+        min-height: 380px;
         border-radius: 22px;
       }
 
@@ -640,17 +681,36 @@
         left: 12px;
         right: 12px;
         bottom: 12px;
-        flex-direction: column;
-        align-items: flex-start;
+        max-width: none;
+        padding: 12px 14px;
       }
 
-      .hero-intro { font-size: 1.3rem; }
+      .hero-intro {
+        font-size: 1.18rem;
+        line-height: 1.18;
+      }
+
       .hero-sub,
-      .prose { font-size: 17px; }
+      .prose {
+        font-size: 16px;
+        line-height: 1.55;
+      }
+
+      .proof-note p {
+        font-size: 15px;
+      }
+
+      .proof-note p + p {
+        font-size: 13px;
+      }
+
       .statement { font-size: clamp(1.9rem, 10vw, 3rem); }
       .big-link { font-size: 22px; }
-      .topic-item { font-size: 17px; }
+      .topic-item { font-size: 16px; padding: 14px 16px; }
       .contact-link { font-size: 18px; }
+      .company-strip,
+      .proof-belt,
+      .contact-wrap { padding: 20px 18px; }
     }
   </style>
 </head>
