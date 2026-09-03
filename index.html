@@ -779,6 +779,16 @@
     }
     .copy-btn:hover { background: var(--accent-soft); border-color: var(--accent); }
     .copy-btn[data-copied="1"] { background: var(--accent); border-color: var(--accent); color: var(--paper); }
+
+    .press-meta {
+      display: block;
+      margin-top: 4px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
   </style>
 
   <script type="application/ld+json">
@@ -958,8 +968,12 @@
         </div>
         <div class="story-side">
           <div class="mini-card">
-            <span class="meta-label">For active requests</span>
-            <p>Press mentions, podcast appearances, and interview references can be shared directly when needed.</p>
+            <span class="meta-label">Coverage</span>
+            <p>Selected press, podcast, and award mentions are listed below with direct links. Most coverage to date is about Empy.ai; Decato is newer and not yet written up.</p>
+          </div>
+          <div class="mini-card">
+            <span class="meta-label">For editors</span>
+            <p>Name spelling: <strong>Aram Shakhbandaryan</strong>. Preferred title: Founder, Decato. Based in Yerevan, Armenia, and available for remote interviews across European and US time zones.</p>
           </div>
         </div>
       </section>
@@ -974,11 +988,44 @@
           </ul>
         </div>
         <div>
-          <div class="eyebrow">Press notes</div>
+          <div class="eyebrow">Selected coverage</div>
           <ul class="press-list">
-            <li>Name spelling: <strong>Aram Shakhbandaryan</strong>. Preferred title: Founder, Decato.</li>
-            <li>Based in Yerevan, Armenia. Available for remote interviews across European and US time zones.</li>
-            <li>For current press mentions, podcast appearances, and interview references, contact Aram directly and the most relevant links can be shared quickly.</li>
+            <li>
+              <a class="text-link" href="https://the-tech.kz/kak-razrabotchik-iz-armenii-proshel-big-tech-i-zapustil-svoj-ai-startap-dlya-sales-komand" target="_blank" rel="noreferrer">THE TECH</a> — founder interview: from adidas and Google to an AI startup in Yerevan.
+              <span class="press-meta">2026 · in Russian</span>
+            </li>
+            <li>
+              <a class="text-link" href="https://www.golosameriki.com/a/it-professionals-leaving-russia-in-troves-means-decline-of-the-russian-economy-in-the-near-future/6537720.html" target="_blank" rel="noreferrer">Voice of America</a> — quoted as a former Google Moscow employee who relocated to Yerevan and stayed.
+              <span class="press-meta">2022 · in Russian</span>
+            </li>
+            <li>
+              <a class="text-link" href="https://blog.eif.am/armenian-startups-reeducate-and-empy-advance-to-the-semifinals-of-the-digital-startup-award-2025/" target="_blank" rel="noreferrer">Enterprise Incubator Foundation</a> — named and quoted as Empy advances to the Digital Startup Award 2025 semifinals.
+              <span class="press-meta">2025 · in English</span>
+            </li>
+            <li>
+              <a class="text-link" href="https://ecdma.org/news/ecdma-senior-member-aram-shakhbandaryans-startup-empy-ai-advances-as-digital-startup-awards-semifinal-winner/" target="_blank" rel="noreferrer">ECDMA</a> — semifinal winner, Digital Startup Awards 2025. Also <a class="text-link" href="https://awards.ecdma.org/member/aram-shakhbandaryan-empy-ai/" target="_blank" rel="noreferrer">Gold, Startup Success</a>.
+              <span class="press-meta">2025 · in English</span>
+            </li>
+            <li>
+              <a class="text-link" href="https://how2b.am/haykakan-emphy-product-huntum/" target="_blank" rel="noreferrer">How2B</a> — Empy on Product Hunt.
+              <span class="press-meta">2023 · in Armenian</span>
+            </li>
+          </ul>
+
+          <div class="eyebrow" style="margin-top: 26px;">Podcasts &amp; launches</div>
+          <ul class="press-list">
+            <li>
+              <a class="text-link" href="https://open.spotify.com/episode/0L4lKjbdLXQE6aZrNfZp7v" target="_blank" rel="noreferrer">Непростые Люди</a> — long-form interview on leaving Google, retreats, and building Empy.
+              <span class="press-meta">2023 · 57 min · in Russian</span>
+            </li>
+            <li>
+              <a class="text-link" href="https://sensualbusiness.mave.digital/ep-1" target="_blank" rel="noreferrer">Чувственный бизнес</a> — building a business without burning out.
+              <span class="press-meta">in Russian</span>
+            </li>
+            <li>
+              <a class="text-link" href="https://www.producthunt.com/products/empy-2/launches" target="_blank" rel="noreferrer">Product Hunt</a> — #2 Product of the Day, 203 upvotes, across three launches.
+              <span class="press-meta">2023–2025</span>
+            </li>
           </ul>
         </div>
       </section>
