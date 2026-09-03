@@ -1,4 +1,33 @@
-<!doctype html>
+  <script>
+    async function copyText(text) {
+      try { await navigator.clipboard.writeText(text); return true; } catch (e) {}
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.cssText = 'position:fixed;top:0;left:-9999px;';
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(ta);
+      return ok;
+    }
+
+    document.querySelectorAll('.copy-btn').forEach(function (btn) {
+      btn.addEventListener('click', async function () {
+        var original = btn.textContent;
+        try {
+          var res = await fetch(btn.dataset.copy);
+          var ok = await copyText((await res.text()).trim());
+          btn.textContent = ok ? 'Copied' : 'Copy failed';
+          if (ok) { btn.dataset.copied = '1'; }
+        } catch (err) {
+          btn.textContent = 'Copy failed';
+        }
+        setTimeout(function () { btn.textContent = original; delete btn.dataset.copied; }, 2000);
+      });
+    });
+  </script><!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
