@@ -3,8 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aram Shakhbandaryan</title>
-  <meta name="description" content="Aram Shakhbandaryan is the founder of Decato, a startup building AI tools that turn floor plans into buyable interior concepts using real products, layout logic, and faster designer workflows.">
+  <title>Aram Shakhbandaryan — Founder of Decato</title>
+  <meta name="description" content="Aram Shakhbandaryan — founder of Decato, ex-Google. Founder profile and press kit: bio, company summary, speaker topics, headshot, and contact.">
+  <meta name="author" content="Aram Shakhbandaryan">
+  <link rel="canonical" href="https://aramshakh.com/">
+  <meta name="theme-color" content="#f5f0e7">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Aram Shakhbandaryan">
+  <meta property="og:title" content="Aram Shakhbandaryan — Founder of Decato">
+  <meta property="og:description" content="Aram Shakhbandaryan — founder of Decato, ex-Google. Founder profile and press kit: bio, company summary, speaker topics, headshot, and contact.">
+  <meta property="og:url" content="https://aramshakh.com/">
+  <meta property="og:image" content="https://aramshakh.com/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Aram Shakhbandaryan, founder of Decato">
+  <meta property="profile:first_name" content="Aram">
+  <meta property="profile:last_name" content="Shakhbandaryan">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Aram Shakhbandaryan — Founder of Decato">
+  <meta name="twitter:description" content="Aram Shakhbandaryan — founder of Decato, ex-Google. Founder profile and press kit: bio, company summary, speaker topics, headshot, and contact.">
+  <meta name="twitter:image" content="https://aramshakh.com/assets/og.png">
   <style>
     :root {
       --bg: #f5f0e7;
@@ -712,7 +733,45 @@
       .proof-belt,
       .contact-wrap { padding: 20px 18px; }
     }
+
+    .copy-btn {
+      margin-top: 8px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: transparent;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 14px;
+      cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    .copy-btn:hover { background: var(--accent-soft); border-color: var(--accent); }
+    .copy-btn[data-copied="1"] { background: var(--accent); border-color: var(--accent); color: var(--paper); }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aram Shakhbandaryan",
+    "url": "https://aramshakh.com/",
+    "image": "https://aramshakh.com/assets/og.png",
+    "jobTitle": "Founder",
+    "email": "mailto:aram@empy.ai",
+    "worksFor": { "@type": "Organization", "name": "Decato", "url": "https://decato.ai" },
+    "alumniOf": [
+      { "@type": "Organization", "name": "Google" },
+      { "@type": "Organization", "name": "adidas" },
+      { "@type": "Organization", "name": "Draper University" }
+    ],
+    "address": { "@type": "PostalAddress", "addressLocality": "Yerevan", "addressCountry": "AM" },
+    "knowsAbout": ["Applied AI", "Interior design technology", "Product strategy", "Go-to-market", "Analytics"],
+    "sameAs": ["https://www.linkedin.com/in/aram-empy", "https://decato.ai"]
+  }
+  </script>
 </head>
 <body>
   <main class="page">
@@ -741,7 +800,7 @@
 
       <section class="hero-stage">
         <figure class="poster">
-          <img src="assets/aram.jpg" alt="Aram Shakhbandaryan standing by the ocean" width="1200" height="1600" fetchpriority="high" decoding="async">
+          <img src="assets/aram.jpg" alt="Aram Shakhbandaryan standing by the ocean" width="640" height="640" fetchpriority="high" decoding="async">
         <figcaption class="poster-note">
           <small>Headshot</small>
           <span>Primary founder image for press and speaker requests.</span>
@@ -881,15 +940,16 @@
           <div class="eyebrow">Downloadable assets</div>
           <ul class="asset-list">
             <li><a class="text-link" href="assets/aram.jpg" download>Founder headshot</a><br><span class="contact-detail">High-quality photo from the hero section.</span></li>
-            <li><a class="text-link" href="assets/aram-bio-short.txt" download>Short founder bio</a><br><span class="contact-detail">Best for event pages, intros, and speaker blurbs.</span></li>
-            <li><a class="text-link" href="assets/aram-bio-long.txt" download>Long founder bio</a><br><span class="contact-detail">Best for media kits, podcast notes, and investor context.</span></li>
+            <li><a class="text-link" href="assets/aram-bio-short.txt" download>Short founder bio</a><br><span class="contact-detail">Best for event pages, intros, and speaker blurbs.</span><br><button class="copy-btn" type="button" data-copy="assets/aram-bio-short.txt">Copy text</button></li>
+            <li><a class="text-link" href="assets/aram-bio-long.txt" download>Long founder bio</a><br><span class="contact-detail">Best for media kits, podcast notes, and investor context.</span><br><button class="copy-btn" type="button" data-copy="assets/aram-bio-long.txt">Copy text</button></li>
           </ul>
         </div>
         <div>
           <div class="eyebrow">Press notes</div>
           <ul class="press-list">
+            <li>Name spelling: <strong>Aram Shakhbandaryan</strong>. Preferred title: Founder, Decato.</li>
+            <li>Based in Yerevan, Armenia. Available for remote interviews across European and US time zones.</li>
             <li>For current press mentions, podcast appearances, and interview references, contact Aram directly and the most relevant links can be shared quickly.</li>
-            <li>The page already includes the primary founder bio, company summary, speaker topics, headshot, and direct contact path in one place.</li>
           </ul>
         </div>
       </section>
@@ -928,7 +988,25 @@
     <footer class="footer">
       <div>Aram Shakhbandaryan — Founder of Decato</div>
       <div>Curated founder profile for press, speaking, and warm introductions around Decato and prior founder work.</div>
+      <div><a class="text-link" href="mailto:aram@empy.ai">aram@empy.ai</a> · Last updated September 2026</div>
     </footer>
   </main>
+
+  <script>
+    document.querySelectorAll('.copy-btn').forEach(function (btn) {
+      btn.addEventListener('click', async function () {
+        var original = btn.textContent;
+        try {
+          var res = await fetch(btn.dataset.copy);
+          await navigator.clipboard.writeText((await res.text()).trim());
+          btn.textContent = 'Copied';
+          btn.dataset.copied = '1';
+        } catch (err) {
+          btn.textContent = 'Copy failed';
+        }
+        setTimeout(function () { btn.textContent = original; delete btn.dataset.copied; }, 2000);
+      });
+    });
+  </script>
 </body>
 </html>
