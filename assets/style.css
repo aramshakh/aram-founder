@@ -381,6 +381,14 @@ h2 {
   padding: 6px;
 }
 
+.shot video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
 .shot img {
   display: block;
   width: 100%;

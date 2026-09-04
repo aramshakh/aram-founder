@@ -42,19 +42,14 @@
   <div class="sections">
 
     <section>
-      <h2><span class="rail-when">2026 to now</span>Decato</h2>
+      <h2><span class="rail-when">2026 to now</span><a href="https://decato.ai">Decato</a></h2>
       <div class="col">
         <p>Interior design workflow software, built with Vladimir Borisov. You hand it a floor plan and a brief. It lays out an editable room, sources products that exist and fit, and assembles something a client can approve and a supplier can quote.</p>
         <p>Fifty people have used it. The average first session runs about six hours, which is the number I watch most, and the first paying customer is in the US. Small numbers, but real ones.</p>
 
-        <figure class="shot pair">
-          <span>
-            <img src="/assets/projects/decato-plan.jpg" alt="An empty floor plan with room names and areas in square metres" width="1150" height="1000" loading="lazy">
-          </span>
-          <span>
-            <img src="/assets/projects/decato-furnished.jpg" alt="The same floor plan furnished, with a bed, sofa, desk, kitchen units and storage placed in each room" width="1400" height="1050" loading="lazy">
-          </span>
-          <figcaption>What goes in, and what comes back. Every object in the second plan is a product with a price, a size and a supplier, which is the part that is hard.</figcaption>
+        <figure class="shot">
+          <video src="/assets/projects/decato-demo.mp4" poster="/assets/projects/decato-demo-poster.jpg" controls muted loop playsinline autoplay preload="metadata" width="1280" height="800"></video>
+          <figcaption>Walls, then rooms with their areas, then furniture with the product names attached. Twenty seconds, no cuts. This is the demo on <a href="https://decato.ai">decato.ai</a>.</figcaption>
         </figure>
         <p>It is narrower than anything I built before, on purpose. Empy failed because I chose a mission over a problem, so this time the wedge is a single check somebody performs every day: does this product actually fit this room, at this price.</p>
       </div>
@@ -72,7 +67,7 @@
     </section>
 
     <section>
-      <h2><span class="rail-when">2021 to 2026</span>Empy.ai</h2>
+      <h2><span class="rail-when">2021 to 2026</span><a href="https://empy.ai">Empy.ai</a></h2>
       <div class="col">
         <p>It started as research: a transformer fine-tuned to tell an evaluation apart from an observation in written speech, at 82% F1. Then a Slack bot that caught conflict in team chat. Then a macOS app that sat in a call and coached you through it in real time.</p>
         <p>Four thousand users. A $165,000 pre-seed. 43 companies through pilots and subscriptions. Second product of the day on Product Hunt. A Burning Heroes final in San Francisco and a live pitch at Plug and Play Silicon Valley. US pilots with Erickson Coaching International and Facility Solutions Group. Draper University, then Plug and Play Armenia.</p>
@@ -81,7 +76,7 @@
           <figcaption>A minute into a call. It is tracking who is talking, it has caught the question that was just asked, and the answer is one click away.</figcaption>
         </figure>
 
-        <p>The Electron build crashed often enough to lose every user it gained, so in February 2026 I locked myself in a room for three weeks and rewrote it in Swift. That fixed the crashes and did not fix the business. I closed it in May 2026.</p>
+        <p>The Electron build crashed often enough to lose every user it gained, so in February 2026 I locked myself in a room for three weeks and rewrote it in Swift. That fixed the crashes and did not fix the business. I closed it in May 2026. The site is still up, which is its own small lesson about how long a landing page outlives a business.</p>
         <p>What it taught me is on the <a href="/about/">about page</a> and at more length in <a href="/writing/mission-vs-problem/">this post</a>: I was driven by a mission rather than a problem, and a mission excuses the absence of feedback for years at a time.</p>
       </div>
     </section>
@@ -90,7 +85,7 @@
       <h2><span class="rail-when">2022</span>A housing bot for people leaving</h2>
       <div class="col">
         <p>In 2022 a great many people arrived in Armenia at once and could not find anywhere to live. I built a Telegram bot that pulled listings and matched them to what people were asking for, and a channel around it.</p>
-        <p>I built it and sold it inside three weeks. The channel is still running, with over six thousand members.</p>
+        <p>I built it and sold it inside three weeks. The <a href="https://t.me/relocationarmenia">channel</a> is still running, with over six thousand members.</p>
         <p>It is the fastest thing I have ever shipped and the only one I sold. Not because the idea was clever, but because the problem was screaming and I was standing next to it.</p>
       </div>
     </section>
@@ -127,5 +122,10 @@
   </footer>
 
 </div>
+<script>
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('video[autoplay]').forEach(function (v) { v.autoplay = false; v.pause(); });
+}
+</script>
 </body>
 </html>
