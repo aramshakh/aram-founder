@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-<main class="page">
+<div class="page">
 
   <header class="masthead">
     <a class="wordmark" href="/">Aram Shakhbandaryan</a>
@@ -30,6 +30,8 @@
       <a href="/press/" aria-current="page">Press</a>
     </nav>
   </header>
+
+  <main>
 
   <div class="prose">
     <h1>Press kit</h1>
@@ -94,12 +96,14 @@
     </li>
   </ul>
 
+  </main>
+
   <footer>
     Most coverage so far is about Empy.ai. Decato is newer and has not been written up yet.
     For anything missing, <a href="mailto:aram@decato.ai">email me</a>.
   </footer>
 
-</main>
+</div>
 <script>
 async function copyText(text) {
   try { await navigator.clipboard.writeText(text); return true; } catch (e) {}

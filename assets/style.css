@@ -5,6 +5,7 @@
   --line: #e2e2df;
   --accent: #1f4fd8;
   --measure: 62ch;
+  --rail: 120px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -100,6 +101,7 @@ a:focus-visible {
 
 h1 {
   margin: 0 0 13px;
+  text-wrap: balance;
   font-size: clamp(26px, 3.6vw, 33px);
   font-weight: 600;
   letter-spacing: -0.025em;
@@ -136,7 +138,7 @@ h1 {
 
 .spine > div {
   display: grid;
-  grid-template-columns: 108px 1fr;
+  grid-template-columns: var(--rail) 1fr;
   gap: 24px;
   padding: 8px 0;
   border-bottom: 1px solid var(--line);
@@ -278,13 +280,11 @@ h2 {
 
 .sections > section {
   display: grid;
-  grid-template-columns: 132px minmax(0, 1fr);
+  grid-template-columns: var(--rail) minmax(0, 1fr);
   gap: 28px;
   padding: 26px 0;
   border-top: 1px solid var(--line);
 }
-
-.sections > section:last-child { border-bottom: 1px solid var(--line); }
 
 .sections h2 {
   margin: 0;
@@ -293,9 +293,12 @@ h2 {
   font-weight: 400;
   letter-spacing: 0;
   color: var(--muted);
+  text-wrap: balance;
 }
 
-.sections .col { max-width: var(--measure); }
+.sections .col { max-width: 34rem; }
+
+.sections p { text-wrap: pretty; }
 
 .sections p {
   margin: 0 0 14px;
@@ -306,6 +309,48 @@ h2 {
 
 @media (max-width: 620px) {
   .sections > section { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+}
+
+/* Reference rows (work history, education) */
+
+.ref {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.ref li { display: block; }
+
+.ref-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 7rem;
+  gap: 16px;
+  align-items: baseline;
+}
+
+.ref strong { font-weight: 600; }
+
+.ref .what {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 15.5px;
+}
+
+.ref .when {
+  color: var(--muted);
+  font-size: 14.5px;
+  white-space: nowrap;
+  text-align: right;
+}
+
+@media (max-width: 620px) {
+  .ref { gap: 18px; }
+  .ref-head { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .ref .when { text-align: left; }
 }
 
 footer {
@@ -322,6 +367,14 @@ footer {
     gap: 24px;
   }
   .portrait { order: -1; width: 104px; height: 104px; }
+  .masthead nav a { padding: 4px 0; }
+  .sections h2 {
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
   .spine > div { grid-template-columns: 1fr; gap: 4px; }
   .topics { columns: 1; }
 }
