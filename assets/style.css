@@ -363,6 +363,43 @@ h2 {
   .ref .when { text-align: left; }
 }
 
+/* Project evidence images */
+
+.shot { margin: 22px 0 24px; }
+
+.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.pair figcaption { grid-column: 1 / -1; margin-bottom: 6px; }
+
+.pair img {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  padding: 6px;
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.shot figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.45;
+}
+
+@media (max-width: 620px) {
+  .pair { grid-template-columns: 1fr; gap: 18px; }
+}
+
 footer {
   margin-top: clamp(48px, 9vh, 88px);
   padding-top: 20px;
