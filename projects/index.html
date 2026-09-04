@@ -36,7 +36,7 @@
 
   <div class="prose">
     <h1>Projects</h1>
-    <p>Eight things I have built since I was twenty-one. Three made money, one is running now, the rest are closed. Each one is here with what actually happened to it, because a list of launches without endings tells you nothing.</p>
+    <p>Seven things I have built since I was twenty-one. Three made money, one is running now, the rest are closed. Each one is here with what actually happened to it, because a list of launches without endings tells you nothing.</p>
   </div>
 
   <div class="sections">
@@ -45,7 +45,7 @@
       <h2><span class="rail-when">2026 to now</span>Decato</h2>
       <div class="col">
         <p>Interior design workflow software, built with Vladimir Borisov. You hand it a floor plan and a brief. It lays out an editable room, sources products that exist and fit, and assembles something a client can approve and a supplier can quote.</p>
-        <p>Around twenty designers have tried it and three pay for it, with sessions running past three hours. Small numbers, but real ones.</p>
+        <p>Fifty people have used it. The average first session runs about six hours, which is the number I watch most, and the first paying customer is in the US. Small numbers, but real ones.</p>
 
         <figure class="shot pair">
           <span>
@@ -63,9 +63,11 @@
     <section>
       <h2><span class="rail-when">2026 to now</span>Hermes</h2>
       <div class="col">
-        <p>My own agent, running on a five-euro server I rent. It holds notes across months, runs the recurring work on a schedule, and I reach it from Telegram. Nobody sold it to me and it has one user.</p>
+        <p>Hermes Agent is an open-source framework for personal agents. I did not write it, I deployed it on a VPS I rent and then built my operations on top of it.</p>
+        <p>It runs twenty-two scheduled jobs. Nine are Decato: search console pulls, a watchdog that diffs which pages are actually indexed, technical checks, a content backlog, a weekly operations report, lead digests, conversion alerts. Others draft the weekly investor update, sweep for follow-ups that have gone stale, and run a finance check-in every evening. Two keep Hermes itself alive: a nightly private backup, and a weekly self-update that refuses to run if the repository is dirty.</p>
+        <p>I talk to it in Telegram, one thread per subject, and it keeps notes across months rather than across a session.</p>
         <p>In 2026 I ran workshops in Yerevan where thirty people brought a laptop and had their own agent running by the end of the afternoon. Five mentors volunteered, unpaid.</p>
-        <p>It is the least impressive thing on this page and the one I use most. Everything else here was built to be sold; this was built because I needed it, which is probably the lesson.</p>
+        <p>It is the least impressive thing on this page and the one I use most. Everything else here was built to be sold; this one was assembled because I needed it, which is probably the lesson.</p>
       </div>
     </section>
 
@@ -80,30 +82,36 @@
     </section>
 
     <section>
-      <h2><span class="rail-when">2022 to 2023</span>Retreat Zone</h2>
+      <h2><span class="rail-when">2022</span>A housing bot for people leaving</h2>
       <div class="col">
-        <p>An aggregator for retreats. The idea was that people who most need to disconnect are the worst at booking it: I wanted to help someone pick their first retreat, check it actually fit what they needed, and handle the transfers and accommodation around it.</p>
-        <p>I raised my first investor check on it. It did not work, and I stopped.</p>
-        <p>It was the first time I built for a market I was inside rather than one I had read about, and the first time raising money did not turn into traction. Both lessons arrived again, larger, with Empy.</p>
+        <p>In 2022 a great many people arrived in Armenia at once and could not find anywhere to live. I built a Telegram bot that pulled listings and matched them to what people were asking for, and a channel around it.</p>
+        <p>I built it and sold it inside three weeks. The channel is still running, with over six thousand members.</p>
+        <p>It is the fastest thing I have ever shipped and the only one I sold. Not because the idea was clever, but because the problem was screaming and I was standing next to it.</p>
       </div>
     </section>
 
     <section>
-      <h2><span class="rail-when">2020 to 2025</span>Communication training</h2>
+      <h2><span class="rail-when">2020 to 2025</span>Retreat Zone</h2>
       <div class="col">
-        <p>Not a product. A practice: fourteen retreats and one-on-one work for founders and executives on how they actually talk to each other, and over three hundred people trained in nonviolent communication.</p>
-        <p>In one six-month stretch it did $70,000 in revenue. Across the same years, it earned roughly five times what the startup did.</p>
-        <p>Empy was an attempt to put this into software. That did not work, but it is still the clearest thing I know how to do, and it is why the interesting problem in Decato is a constraint check rather than a picture.</p>
+        <p>It started with running them myself. Four days in a house in the mountains for tech managers who were burning out: nonviolent communication workshops, Ashtanga in the morning, ecstatic dance, a tea ceremony, and a lot of unstructured time. $1,700 a head.</p>
+
+        <figure class="shot">
+          <img src="/assets/projects/retreat-landing.png" alt="The Retreat at Aram's landing page: four days of deep rest in a safe space, May 1 to 4, $1,700, a mindfulness retreat for tech managers" width="1200" height="817" loading="lazy">
+          <figcaption>One of them. The photograph is the room at eleven at night, which is when most of the useful work happened.</figcaption>
+        </figure>
+
+        <p>Fourteen retreats, plus one-on-one work, and over three hundred people trained in nonviolent communication. In one six-month stretch it did $70,000 in revenue. Across the same years it earned roughly five times what the startup did.</p>
+        <p>Retreat Zone was the attempt to turn that into a business rather than a calendar: an aggregator, because the people who most need to disconnect are the worst at booking it. I wanted to help someone pick their first retreat, check it actually fit what they needed, and handle the transfers and accommodation around it. I raised my first investor check on it. It did not work, and I stopped.</p>
+        <p>The practice paid. The product built on top of the practice did not. I have made that mistake once more since, with Empy, which is why Decato starts from something someone already pays to have done.</p>
       </div>
     </section>
 
     <section>
-      <h2><span class="rail-when">before that</span>The first three</h2>
+      <h2><span class="rail-when">before that</span>The first two</h2>
       <div class="col">
         <p><strong>An ad agency, at twenty-one.</strong> Over $4,000 a month, then bankrupt inside a year.</p>
         <p><strong>A first startup, at twenty-three.</strong> Bankrupt again. I took two full-time jobs at twenty-four to clear the debt.</p>
-        <p><strong>A real estate product, at twenty-eight.</strong> Built it and sold it within three weeks, the same year my mother died.</p>
-        <p>I list these because the pattern only reads correctly at full length. Anyone can have one failure explained away; eight attempts with the endings named is a different claim.</p>
+        <p>I list these because the pattern only reads correctly at full length. Anyone can have one failure explained away; seven attempts with the endings named is a different claim.</p>
       </div>
     </section>
 
