@@ -272,6 +272,42 @@ h2 {
 
 .list a.role { font-weight: 560; }
 
+/* Sectioned long-form (About) */
+
+.sections { margin-top: 30px; }
+
+.sections > section {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  gap: 28px;
+  padding: 26px 0;
+  border-top: 1px solid var(--line);
+}
+
+.sections > section:last-child { border-bottom: 1px solid var(--line); }
+
+.sections h2 {
+  margin: 0;
+  padding-top: 3px;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--muted);
+}
+
+.sections .col { max-width: var(--measure); }
+
+.sections p {
+  margin: 0 0 14px;
+  line-height: 1.6;
+}
+
+.sections p:last-child { margin-bottom: 0; }
+
+@media (max-width: 620px) {
+  .sections > section { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+}
+
 footer {
   margin-top: clamp(48px, 9vh, 88px);
   padding-top: 20px;
