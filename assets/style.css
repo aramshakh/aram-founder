@@ -249,6 +249,29 @@ h2 {
 
 .copy-btn:active { transform: translateY(1px); }
 
+/* Writing */
+
+.post { max-width: var(--measure); }
+
+.post h1 { margin-bottom: 7px; }
+
+.post-date {
+  margin: 0 0 30px;
+  color: var(--muted);
+  font-size: 14.5px;
+}
+
+.post p {
+  margin: 0 0 21px;
+  line-height: 1.62;
+}
+
+.post p:last-child { margin-bottom: 0; }
+
+.post strong { font-weight: 600; }
+
+.list a.role { font-weight: 560; }
+
 footer {
   margin-top: clamp(48px, 9vh, 88px);
   padding-top: 20px;

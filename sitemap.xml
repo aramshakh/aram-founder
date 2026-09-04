@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://aramshakh.com/</loc><lastmod>2026-09-03</lastmod><priority>1.0</priority></url>
-  <url><loc>https://aramshakh.com/about/</loc><lastmod>2026-09-03</lastmod><priority>0.8</priority></url>
-  <url><loc>https://aramshakh.com/press/</loc><lastmod>2026-09-03</lastmod><priority>0.8</priority></url>
+  <url><loc>https://aramshakh.com/</loc><lastmod>2026-09-04</lastmod><priority>1.0</priority></url>
+  <url><loc>https://aramshakh.com/about/</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://aramshakh.com/writing/</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://aramshakh.com/press/</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://aramshakh.com/writing/closing-empy/</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://aramshakh.com/writing/working-and-hiding/</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://aramshakh.com/writing/agent-workshop/</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://aramshakh.com/writing/three-languages/</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://aramshakh.com/writing/the-perfect-deck/</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://aramshakh.com/writing/investor-red-flags/</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://aramshakh.com/writing/draper/</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://aramshakh.com/writing/fourteen-cofounders/</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
 </urlset>
