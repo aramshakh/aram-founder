@@ -36,7 +36,7 @@
 
   <div class="prose">
     <h1>Projects</h1>
-    <p>Seven things I have built since I was twenty-one. Three made money, one is running now, the rest are closed. Each one is here with what actually happened to it, because a list of launches without endings tells you nothing.</p>
+    <p>Seven companies and products since 2014. Two are running, five are closed. Dates, numbers and current status for each.</p>
   </div>
 
   <div class="sections">
@@ -44,74 +44,71 @@
     <section>
       <h2><span class="rail-when">2026 to now</span><a href="https://decato.ai">Decato</a></h2>
       <div class="col">
-        <p>Interior design workflow software, built with Vladimir Borisov. You hand it a floor plan and a brief. It lays out an editable room, sources products that exist and fit, and assembles something a client can approve and a supplier can quote.</p>
-        <p>Fifty people have used it. The average first session runs about six hours, which is the number I watch most, and the first paying customer is in the US. Small numbers, but real ones.</p>
+        <p>Interior design workflow software, co-founded with Vladimir Borisov. It takes a floor plan and a brief, lays out an editable room, sources products that exist and fit the dimensions, and assembles a specification a client can approve and a supplier can quote.</p>
+        <p>Fifty users to date. The average first session runs about six hours. First paying customer in the US.</p>
 
         <figure class="shot">
           <video src="/assets/projects/decato-demo.mp4" poster="/assets/projects/decato-demo-poster.jpg" controls muted loop playsinline autoplay preload="metadata" width="1280" height="800"></video>
-          <figcaption>Walls, then rooms with their areas, then furniture with the product names attached. Twenty seconds, no cuts. This is the demo on <a href="https://decato.ai">decato.ai</a>. There is also a <a href="https://www.youtube.com/watch?v=etBcfS1lr-Y">three-minute pitch</a> from the Plug and Play Batch 3 Expo, filmed on stage in Yerevan in July 2026.</figcaption>
+          <figcaption>Walls, then rooms with their areas, then furniture with product names attached. Twenty seconds, no cuts. Longer version on <a href="https://decato.ai">decato.ai</a>, plus a <a href="https://www.youtube.com/watch?v=etBcfS1lr-Y">three-minute pitch</a> from the Plug and Play Batch 3 Expo in Yerevan, July 2026.</figcaption>
         </figure>
-        <p>It is narrower than anything I built before, on purpose. Empy failed because I chose a mission over a problem, so this time the wedge is a single check somebody performs every day: does this product actually fit this room, at this price.</p>
+
+        <p>Completed Plug and Play Armenia's third pre-acceleration programme, which closed with an expo in July 2026. The Armenian Ministry of High-Tech Industry <a href="https://hightech.gov.am/en/articles/news/plug-and-play-concludes-third-startup-support-pre-acceleration-program-in-armenia">listed the cohort</a>.</p>
       </div>
     </section>
 
     <section>
       <h2><span class="rail-when">2026 to now</span>Hermes</h2>
       <div class="col">
-        <p>Hermes Agent is an open-source framework for personal agents. I did not write it, I deployed it on a VPS I rent and then built my operations on top of it.</p>
-        <p>It runs twenty-two scheduled jobs. Nine are Decato: search console pulls, a watchdog that diffs which pages are actually indexed, technical checks, a content backlog, a weekly operations report, lead digests, conversion alerts. Others draft the weekly investor update, sweep for follow-ups that have gone stale, and run a finance check-in every evening. Two keep Hermes itself alive: a nightly private backup, and a weekly self-update that refuses to run if the repository is dirty.</p>
-        <p>I talk to it in Telegram, one thread per subject, and it keeps notes across months rather than across a session.</p>
-        <p>In 2026 I ran workshops in Yerevan where people brought a laptop and had their own agent running by the end of the afternoon. At the first one thirty people came and five mentors volunteered, unpaid. <a href="https://t.me/ai9campus/61">AI9 Startup Campus hosted the next</a>, on a Saturday afternoon in May, with a prerequisite list that asked people to turn up with a server already running.</p>
-        <p>It is the least impressive thing on this page and the one I use most. Everything else here was built to be sold; this one was assembled because I needed it, which is probably the lesson.</p>
+        <p>An operations agent running on a private VPS, built on the open-source Hermes Agent framework. It handles the recurring work across my companies and I run it from Telegram, one thread per subject, with memory that persists across months.</p>
+        <p>Twenty-two scheduled jobs in production. Nine cover Decato: Search Console pulls, an indexation watchdog, technical checks, a content backlog, a weekly operations report, lead digests and conversion alerts. The rest draft the weekly investor update, sweep stale follow-ups, run a daily finance check-in, and maintain the system itself through a nightly backup and a guarded weekly update.</p>
+        <p>I also teach the setup. The first session in Yerevan drew thirty people and five volunteer mentors; <a href="https://t.me/ai9campus/61">AI9 Startup Campus hosted the next</a> in May 2026, with attendees required to arrive with a server provisioned and SSH working.</p>
       </div>
     </section>
 
     <section>
       <h2><span class="rail-when">2021 to 2026</span><a href="https://empy.ai">Empy.ai</a></h2>
       <div class="col">
-        <p>It started as research: a transformer fine-tuned to tell an evaluation apart from an observation in written speech, at 82% F1. Then a Slack bot that caught conflict in team chat. Then a macOS app that sat in a call and coached you through it in real time.</p>
-        <p>Four thousand users. A $165,000 pre-seed. 43 companies through pilots and subscriptions. Second product of the day on Product Hunt. A Burning Heroes final in San Francisco and a live pitch at Plug and Play Silicon Valley. US pilots with Erickson Coaching International and Facility Solutions Group. Draper University, then Plug and Play Armenia.</p>
+        <p>Conversation AI for high-stakes calls, co-founded and led as CEO. It began as a transformer fine-tuned to separate evaluation from observation in written speech at 82% F1, shipped as a Slack bot for team communication, and became a macOS application that ran during live calls.</p>
+
         <figure class="shot">
-          <img src="/assets/projects/empy-in-call.jpg" alt="The Empy panel during a call: a one minute timer, a participation bar splitting talk time fifty-fifty, a question it detected from the other side, and an ask box" width="1100" height="676" loading="lazy">
-          <figcaption>A minute into a call. It is tracking who is talking, it has caught the question that was just asked, and the answer is one click away.</figcaption>
+          <img src="/assets/projects/empy-in-call.jpg" alt="The Empy panel during a call: a talk-time split, engagement states for both sides, a needs detector reading clarity and support, and a question detected from the conversation" width="1100" height="545" loading="lazy">
+          <figcaption>Live call. Talk-time split, engagement state for both sides, detected needs, and questions surfaced from the conversation as they are asked.</figcaption>
         </figure>
 
-        <p>The Electron build crashed often enough to lose every user it gained, so in February 2026 I locked myself in a room for three weeks and rewrote it in Swift. That fixed the crashes and did not fix the business. I closed it in May 2026. The site is still up, which is its own small lesson about how long a landing page outlives a business.</p>
-        <p>What it taught me is on the <a href="/about/">about page</a> and at more length in <a href="/writing/mission-vs-problem/">this post</a>: I was driven by a mission rather than a problem, and a mission excuses the absence of feedback for years at a time.</p>
+        <p>Four thousand users. $165,000 pre-seed. 43 companies through pilots and subscriptions. Second product of the day on Product Hunt. Finalist at Burning Heroes 2024 in San Francisco with a live pitch at Plug and Play Silicon Valley. US pilots with Erickson Coaching International and Facility Solutions Group. Draper University, then Plug and Play Armenia.</p>
+        <p>The Electron client had stability problems that cost retention, and was rewritten in Swift in February 2026. Closed in May 2026. The product site remains online.</p>
       </div>
     </section>
 
     <section>
-      <h2><span class="rail-when">2022</span>A housing bot for people leaving</h2>
+      <h2><span class="rail-when">2022</span>Housing search bot</h2>
       <div class="col">
-        <p>In 2022 a great many people arrived in Armenia at once and could not find anywhere to live. I built a Telegram bot that pulled listings and matched them to what people were asking for, and a channel around it.</p>
-        <p>I built it and sold it inside three weeks. The <a href="https://t.me/relocationarmenia">channel</a> is still running, with over six thousand members.</p>
-        <p>It is the fastest thing I have ever shipped and the only one I sold. Not because the idea was clever, but because the problem was screaming and I was standing next to it.</p>
+        <p>A Telegram bot for the 2022 relocation wave to Armenia. It aggregated rental listings and matched them against what people specified, with a distribution channel around it.</p>
+        <p>Built and sold within three weeks. The <a href="https://t.me/relocationarmenia">channel</a> remains active with over six thousand members.</p>
       </div>
     </section>
 
     <section>
       <h2><span class="rail-when">2020 to 2025</span>Retreat Zone</h2>
       <div class="col">
-        <p>It started with running them myself. Four days in a house in the mountains for tech managers who were burning out: nonviolent communication workshops, Ashtanga in the morning, ecstatic dance, a tea ceremony, and a lot of unstructured time. $1,700 a head.</p>
+        <p>A communication training practice, then a venture built on it. The practice ran four-day residential programmes for technology managers: nonviolent communication workshops, morning Ashtanga, movement and group work, at $1,700 per participant.</p>
 
         <figure class="shot">
           <img src="/assets/projects/retreat-landing.png" alt="The Retreat at Aram's landing page: four days of deep rest in a safe space, May 1 to 4, $1,700, a mindfulness retreat for tech managers" width="1200" height="817" loading="lazy">
-          <figcaption>One of them. The photograph is the room at eleven at night, which is when most of the useful work happened.</figcaption>
+          <figcaption>One of the programmes, with the four-day agenda and pricing.</figcaption>
         </figure>
 
-        <p>Fourteen retreats, plus one-on-one work, and over three hundred people trained in nonviolent communication. In one six-month stretch it did $70,000 in revenue. Across the same years it earned roughly five times what the startup did.</p>
-        <p>Retreat Zone was the attempt to turn that into a business rather than a calendar: an aggregator, because the people who most need to disconnect are the worst at booking it. I wanted to help someone pick their first retreat, check it actually fit what they needed, and handle the transfers and accommodation around it. I raised my first investor check on it. It did not work, and I stopped.</p>
-        <p>The practice paid. The product built on top of the practice did not. I have made that mistake once more since, with Empy, which is why Decato starts from something someone already pays to have done.</p>
+        <p>Fourteen programmes delivered, plus individual coaching. Over three hundred people trained in nonviolent communication. $70,000 in revenue across one six-month period, and roughly five times the startup's revenue over the same years.</p>
+        <p>Retreat Zone was the productised version: an aggregator handling selection, fit and logistics for first-time attendees. Incorporated in Delaware, first investor check raised. Discontinued in 2025.</p>
       </div>
     </section>
 
     <section>
-      <h2><span class="rail-when">before that</span>The first two</h2>
+      <h2><span class="rail-when">before 2016</span>Earlier ventures</h2>
       <div class="col">
-        <p><strong>An ad agency, at twenty-one.</strong> Over $4,000 a month, then bankrupt inside a year.</p>
-        <p><strong>A first startup, at twenty-three.</strong> Bankrupt again. I took two full-time jobs at twenty-four to clear the debt.</p>
-        <p>I list these because the pattern only reads correctly at full length. Anyone can have one failure explained away; seven attempts with the endings named is a different claim.</p>
+        <p><strong>Digital agency, from eighteen.</strong> Websites and marketing, run while still at school and through university.</p>
+        <p><strong>Ad agency, at twenty-one.</strong> Over $4,000 a month. Closed within a year.</p>
+        <p><strong>First technology startup, at twenty-three.</strong> Closed. Two full-time roles taken afterwards to clear the debt.</p>
       </div>
     </section>
 
