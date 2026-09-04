@@ -404,8 +404,18 @@ h2 {
   line-height: 1.45;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 20px;
+  margin: 22px 0 26px;
+}
+
+.gallery .shot { margin: 0; }
+
 @media (max-width: 620px) {
   .pair { grid-template-columns: 1fr; gap: 18px; }
+  .gallery { grid-template-columns: 1fr; gap: 26px; }
 }
 
 footer {
