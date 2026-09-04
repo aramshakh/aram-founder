@@ -287,6 +287,10 @@ h2 {
 }
 
 .sections h2 {
+  display: grid;
+  gap: 2px;
+  align-self: start;
+  align-content: start;
   margin: 0;
   padding-top: 3px;
   font-size: 15px;
@@ -294,6 +298,12 @@ h2 {
   letter-spacing: 0;
   color: var(--muted);
   text-wrap: balance;
+}
+
+.rail-when {
+  color: var(--text);
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
 }
 
 .sections .col { max-width: 34rem; }
@@ -369,11 +379,22 @@ footer {
   .portrait { order: -1; width: 104px; height: 104px; }
   .masthead nav a { padding: 4px 0; }
   .sections h2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px;
+    align-items: baseline;
     color: var(--text);
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+  }
+  .rail-when {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--muted);
+    letter-spacing: 0;
+    text-transform: none;
   }
   .spine > div { grid-template-columns: 1fr; gap: 4px; }
   .topics { columns: 1; }
