@@ -168,6 +168,12 @@ h1 {
   text-wrap: pretty;
 }
 
+.also {
+  margin: 0 0 clamp(14px, 2vh, 20px);
+  color: var(--muted);
+  font-size: 15.5px;
+}
+
 /* Link row */
 
 .contact {
