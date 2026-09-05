@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Decato · Aram Shakhbandaryan</title>
-<meta name="description" content="A floor plan becomes a finished room you can actually buy: real products, real dimensions, real prices, and a specification a supplier can quote.">
+<meta name="description" content="How Decato happened, in order: twenty-six designer interviews, 555 competitor pages, a launch that split its users in two, and the autonomy dial we built in response.">
 <link rel="canonical" href="https://aramshakh.com/projects/decato/">
 <meta name="theme-color" content="#fbfbfa" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#121214" media="(prefers-color-scheme: dark)">
@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Decato">
-<meta property="og:description" content="A floor plan becomes a finished room you can actually buy: real products, real dimensions, real prices, and a specification a supplier can quote.">
+<meta property="og:description" content="How Decato happened, in order: twenty-six designer interviews, 555 competitor pages, a launch that split its users in two, and the autonomy dial we built in response.">
 <meta property="og:url" content="https://aramshakh.com/projects/decato/">
 <meta property="og:image" content="https://aramshakh.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -38,22 +38,37 @@
   <article class="post">
     <h1>Decato</h1>
     <p class="post-date">2026 to now · running</p>
-      <p>Decato turns a floor plan into a finished room you can actually buy: real products, real dimensions, real prices. It takes the plan and a brief, lays out an editable room, sources products that exist and fit, and assembles a specification a supplier can quote. Co-founded with Vladimir Borisov.</p>
-      <p>The hard part was never the image. It is keeping the geometry, the fit and the real product constraints true all the way from the plan to the spec sheet.</p>
-      <p>The counterintuitive thing we found while working out what to sell is that a better picture can cost the client money: a render that looks finished raises what contractors quote against it. That pushed us away from selling images and towards selling the check — does it fit, does it exist, what does it really cost — at the moment the client is choosing.</p>
+      <p>I closed Empy in May 2026 and called Vladimir Borisov the same week. He had been advising me on the ML pipeline for the Swift rewrite. He bought a ticket, arrived in Yerevan, and we spent the summer on one question: where is a narrow problem in which the geometry matters and nobody is checking it.</p>
+
+      <h2>Why rooms</h2>
+      <p>Designing a room takes an afternoon. Everything after it takes a week. A floor-plan app holds the layout, a mood board holds the look, a freelance render holds the visuals, a spreadsheet holds the budget, and twenty retailer tabs hold the answer to whether anything is in stock and fits. Every one of those tools works. None of them know about each other, so the designer becomes the integration layer and spends the week doing data entry at designer rates.</p>
+      <p>We interviewed twenty-six designers between June and August. A single render costs a studio $600 to $1,500. Each change after the second round, $50 to $150. Freelance drafting runs up to $130 an hour. One studio produced seven or eight revised renders of one room in a month and had none of them approved. A studio keeps 15 to 25 per cent on a project, and most of what it gives away goes to redoing work, because the errors surface after the render.</p>
+
+      <h2>What nobody was doing</h2>
+      <p>We read 555 competitor pages looking for a tool that checks a real product against the room it is going into. The near misses all stop in the same place: geometry without products, or products without geometry. AI restylers ship the opposite of what a designer needs: no dimensions, no real products, no fit check, no purchase path. Beautiful rooms full of furniture that does not exist.</p>
+      <p>The blocker is not the picture. Image quality is turning into a commodity, and I do not think anyone wins there. The blocker is catalogue fidelity: a multi-vendor catalogue carrying manufacturer-accurate geometry, and a renderer conditioned on that geometry rather than on a prompt. Unglamorous, compounding with every project, and roughly what Vladimir had spent ten years building in retail machine learning.</p>
+      <p>The counterintuitive thing we found while working out what to sell is that a better picture can cost the client money: a render that looks finished raises what contractors quote against it. That pushed us away from selling images and towards selling the check &mdash; does it fit, does it exist, what does it really cost &mdash; at the moment the client is choosing.</p>
+
+      <h2>What we shipped</h2>
+      <p>A Mac app. You talk to it and it builds in the canvas. The floor plan becomes an editable scene at true scale. Products that exist are matched against the brief, the budget and the room. Anything that breaks a door swing, a clearance or a walkway is dropped before it is drawn. The render is generated from the geometry, not imagined from a prompt. The deck exports with every product row linking to its shop page.</p>
+      <p>Planning is free on your own model key. We charge for the expensive parts: a render costs us about six cents to serve and sells for forty to eighty inside a plan. Margin on the metered part is not the constraint. Distribution is.</p>
 
       <figure class="shot">
         <video src="/assets/projects/decato-demo.mp4" poster="/assets/projects/decato-demo-poster.jpg" controls muted loop playsinline autoplay preload="metadata" width="1280" height="800"></video>
         <figcaption>Walls, then rooms with their areas, then furniture with product names attached. Twenty seconds, no cuts.</figcaption>
       </figure>
 
-      <h2>Where it is</h2>
-      <p>Live since 13 August 2026. The launch split the users in a way we had not planned for: two homeowners ran six-hour unprompted sessions on their own floor plans and asked to pay, while of twenty designers one was enthusiastic and the rest objected to the agent doing the layout at all. So the product has an autonomy dial now &mdash; full for the homeowner, narrow for the designer whose layout and picks stay theirs.</p>
-      <p>Fifty users to date. The average first session runs about six hours. First paying customer in the US. <span class="stamp">Last checked 5 September 2026.</span></p>
-      <p>Completed Plug and Play Armenia&#x27;s third pre-acceleration programme, which closed with an expo in Yerevan in July 2026. The Armenian Ministry of High-Tech Industry <a href="https://hightech.gov.am/en/articles/news/plug-and-play-concludes-third-startup-support-pre-acceleration-program-in-armenia">listed the cohort</a>, and the <a href="https://www.youtube.com/watch?v=etBcfS1lr-Y">three-minute pitch</a> from that expo is on YouTube.</p>
+      <h2>13 August</h2>
+      <p>We launched on macOS, closed, to people we had already talked to. The users split in a way we had not planned for. Two homeowners ran six-hour unprompted sessions on their own floor plans, went through the whole workflow on several versions of a house, then took the result to a showroom to buy. Of twenty designers, one was enthusiastic, and for a reason we had not pitched: it removes 3D modelling from getting a render. The rest did not argue with the output. They argued with the agent doing the layout at all. One of them put it exactly: &ldquo;I studied for years, and now I am left nudging things.&rdquo;</p>
+      <p>Better auto-layout does not answer that. It is an objection to handing the work over, not to how the work came out. So we did not change the audience. We changed how much the agent is allowed to take: full autonomy for the homeowner, who has no authorship to defend; narrow autonomy for the designer, whose layout and picks stay theirs and who only wants the modelling gone. Same engine, same catalogue, same geometry check, one dial.</p>
 
-      <h2>Team</h2>
-      <p>My co-founder is Vladimir Borisov, previously ML lead at Grid Dynamics and founder of Fringe, an AI studio that shipped more than ten products.</p>
+      <h2>Where it is</h2>
+      <p>As of 31 August: 41 downloads, five of five demos reached a finished render, 26 designer meetings. Fifty people have used it since, the first session averages six hours, and one customer in the US pays for it. Those numbers are small and I intend to keep publishing them. <span class="stamp">Last checked 5 September 2026.</span></p>
+      <p>Windows is built and not yet public. Our own floor-plan reader ships at the end of October; until then we parse plans with a general model, thirty thousand so far. Kitchens and wet zones are the weakest part. Two retailers in the catalogue, more coming.</p>
+      <p>We completed Plug and Play Armenia&#x27;s third pre-acceleration programme, which closed with an expo in Yerevan in July 2026. The Armenian Ministry of High-Tech Industry <a href="https://hightech.gov.am/en/articles/news/plug-and-play-concludes-third-startup-support-pre-acceleration-program-in-armenia">listed the cohort</a>, and the <a href="https://www.youtube.com/watch?v=etBcfS1lr-Y">three-minute pitch</a> from that expo is on YouTube.</p>
+
+      <h2>Vladimir</h2>
+      <p>My co-founder was ML and computer-vision lead at Grid Dynamics, where he shipped recommendations, item compatibility and visual search for retail. He founded Fringe, an AI studio that shipped more than ten products, and founded the AI and machine learning department at Saratov State University. We have been shipping together for two years. Decato is the first thing we own together.</p>
   </article>
 
   </main>

@@ -156,6 +156,9 @@ h1 {
   max-width: var(--measure);
 }
 
+.spine a.role { color: inherit; text-decoration-color: var(--line); }
+.spine a.role:hover { text-decoration-color: var(--accent); }
+
 .spine .role {
   font-weight: 560;
 }
