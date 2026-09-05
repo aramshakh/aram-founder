@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://aramshakh.com/</loc><lastmod>2026-09-04</lastmod><priority>1.0</priority></url>
+  <url><loc>https://aramshakh.com/</loc><lastmod>2026-09-05</lastmod><priority>1.0</priority></url>
   <url><loc>https://aramshakh.com/about/</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://aramshakh.com/projects/</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://aramshakh.com/projects/decato/</loc><lastmod>2026-09-05</lastmod><priority>0.7</priority></url>
+  <url><loc>https://aramshakh.com/projects/hermes/</loc><lastmod>2026-09-05</lastmod><priority>0.7</priority></url>
+  <url><loc>https://aramshakh.com/projects/empy/</loc><lastmod>2026-09-05</lastmod><priority>0.7</priority></url>
+  <url><loc>https://aramshakh.com/projects/housing-bot/</loc><lastmod>2026-09-05</lastmod><priority>0.7</priority></url>
+  <url><loc>https://aramshakh.com/projects/retreats/</loc><lastmod>2026-09-05</lastmod><priority>0.7</priority></url>
+  <url><loc>https://aramshakh.com/projects/earlier/</loc><lastmod>2026-09-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://aramshakh.com/writing/</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://aramshakh.com/press/</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://aramshakh.com/writing/accelerators/</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
