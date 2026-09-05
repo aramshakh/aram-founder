@@ -264,6 +264,8 @@ h2 {
 
 .post h1 { margin-bottom: 7px; }
 
+.post > h1 + p:not(.post-date) { margin-top: 26px; }
+
 .post-date {
   margin: 0 0 30px;
   color: var(--muted);
@@ -279,6 +281,26 @@ h2 {
 .post p:last-child { margin-bottom: 0; }
 
 .post strong { font-weight: 600; }
+
+.post .rule {
+  margin: 2.4em 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+
+.post-tail {
+  margin-top: 2.2em;
+  color: var(--muted);
+  font-size: 15.5px;
+  line-height: 1.55;
+}
+
+.ref-title {
+  margin: 30px 0 14px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
 
 .list a.role { font-weight: 560; }
 
@@ -433,6 +455,10 @@ footer {
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 14.5px;
+}
+
+@media (max-width: 620px) {
+  .post { font-size: 17px; }
 }
 
 @media (max-width: 620px) {
