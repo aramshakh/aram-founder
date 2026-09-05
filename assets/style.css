@@ -123,8 +123,8 @@ h1 {
 }
 
 .portrait {
-  width: 132px;
-  height: 132px;
+  width: 180px;
+  height: 240px;
   border-radius: 2px;
   object-fit: cover;
 }
@@ -140,7 +140,7 @@ h1 {
   display: grid;
   grid-template-columns: var(--rail) 1fr;
   gap: 24px;
-  padding: 8px 0;
+  padding: 6px 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -431,7 +431,7 @@ footer {
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  .portrait { order: -1; width: 104px; height: 104px; }
+  .portrait { order: -1; width: 132px; height: 176px; }
   .masthead nav a { padding: 4px 0; }
   .sections h2 {
     display: flex;
