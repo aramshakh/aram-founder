@@ -303,6 +303,14 @@ h2 {
   white-space: nowrap;
 }
 
+.post .headshot {
+  width: 132px;
+  height: 132px;
+  border-radius: 2px;
+  object-fit: cover;
+  margin: 4px 0 18px;
+}
+
 .post-tail {
   margin-top: 2.2em;
   color: var(--muted);
