@@ -288,6 +288,12 @@ h2 {
   border-top: 1px solid var(--line);
 }
 
+.stamp {
+  color: var(--muted);
+  font-size: 0.86em;
+  white-space: nowrap;
+}
+
 .post-tail {
   margin-top: 2.2em;
   color: var(--muted);
